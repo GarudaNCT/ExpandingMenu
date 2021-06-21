@@ -51,8 +51,8 @@ open class ExpandingMenuItem: UIView {
     
     var index: Int = 0
     weak var delegate: ExpandingMenuButton?
-    var titleButton: UIButton?
-    var frontImageView: UIImageView
+    @objc var titleButton: UIButton?
+    @objc var frontImageView: UIImageView
     fileprivate var tappedAction: (() -> Void)?
     
     // MARK: - Initializer
