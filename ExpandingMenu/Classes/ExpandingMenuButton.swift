@@ -99,7 +99,7 @@ open class ExpandingMenuButton: UIView, UIGestureRecognizerDelegate {
     fileprivate var menuButtonRotatedHighlightedImage: UIImage?
     
     fileprivate var bottomView: UIView = UIView()
-    fileprivate var menuItems: [ExpandingMenuItem] = []
+    @objc open var menuItems: [ExpandingMenuItem] = []
     
     fileprivate var foldSound: SystemSoundID = 0
     fileprivate var expandingSound: SystemSoundID = 0
